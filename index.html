@@ -243,10 +243,10 @@
 
             mensagem.classList.add("hidden");
 
-            const itemHeight = 80;
-            const finalIndex = 4;
-            const finalOffset = -(finalIndex * itemHeight);
-
+            const items = document.querySelectorAll(".slot-item");
+const itemHeight = items[0].offsetHeight; 
+const finalIndex = 4; 
+const finalOffset = -(finalIndex * itemHeight);
             slot.style.transition = "transform 2.3s cubic-bezier(.17,.67,.55,1.43)";
             slot.style.transform = `translateY(${finalOffset}px)`;
 
@@ -292,5 +292,6 @@
     </script>
 
 </body>
+
 
 </html>
