@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Red — Xique Xique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="top-header">
+        <div class="logo-area">
+            <span class="black">Black</span>
+            <img src="img/Logo.png" alt="Logo da Empresa" class="logo">
+            <span class="red">Red</span>
+        </div>
+    </header>
+
+    <section class="corpo">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-container">
+
+                <div class="hero-left">
+                    <h1 class="main-title">Xique Xique</h1>
+                    <p class="main-subtitle">
+                        O Som Que Conecta
+                        Um instrumento único, artesanal, sustentável e cheio de personalidade.
+                        O Xique Xique une criatividade, ritmo e cultura em um único produto –
+                        feito para quem ama música e quer levar autenticidade para qualquer apresentação.
+                    </p>
+
+                    <!-- BOTÃO SECRETO + ÁUDIO -->
+                    <section class="bonus-section">
+
+                        <button id="botao-secreto" class="botao-secreto locked">
+                            🔒 Botão Secreto — Complete todos os jogos primeiro!
+                        </button>
+
+                        <p id="msg-bonus" class="msg-bonus hidden"></p>
+
+                        <!-- TEXTO E HUB DE ÁUDIO (aparece só depois do desbloqueio) -->
+                        <div id="audio-area" class="hidden">
+                            <p class="texto-final">
+                                🎉 Parabéns! Você completou todos os jogos e desbloqueou o som oficial do <strong>Xique
+                                    Xique</strong>!
+                                Agora você entende todos os benefícios do instrumento e garantiu o melhor preço de
+                                todos.
+                            </p>
+
+                            <div class="audio-controls">
+                                <button onclick="audioChocalho.play()" class="audio-btn">▶ Play</button>
+                                <button onclick="audioChocalho.pause()" class="audio-btn">⏸ Pause</button>
+                                <button onclick="audioChocalho.currentTime = 0; audioChocalho.pause()"
+                                    class="audio-btn">⏹ Stop</button>
+                            </div>
+                        </div>
+
+                        <!-- Áudio REAL do produto -->
+                        <audio id="sound-chocalho" src="img/Som de CHOCALHO - Som na Mente (youtube).mp3"></audio>
+
+                    </section>
+
+                </div>
+
+                <div class="hero-right"></div>
+            </div>
+        </section>
+
+        <!-- JOGO 01 — CARTAS -->
+        <section class="cards-section">
+
+            <div class="cards-intro">
+                <h2>🎮 JOGO 01 — Cartas da Sorte ✨</h2>
+
+                <p class="game-description">
+                    Nesse jogo você escolherá entre nossas cartas e descobrirá as principais vantagens que fazem
+                    o <strong>Xique Xique</strong> se destacar dos concorrentes.
+                    <br><br>
+                    Você vence o jogo ao virar todas as cartas e desbloquear todos os benefícios ocultos!
+                </p>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- CARD 1 -->
+                <div class="card-container reveal">
+                    <h3 class="card-title">Praticidade</h3>
+
+                    <div class="flip-card"
+                        data-benefit="Leve, fácil de transportar e perfeito para atividades musicais rápidas e dinâmicas.">
+                        <div class="flip-card-inner">
+
+                            <div class="card-face card-front">
+                                <img src="img/Copas.jpg" class="card-img">
+                            </div>
+
+                            <div class="card-face card-back">
+                                <img src="img/CartasVerso.jpg" class="card-back-img">
+                                <p class="benefit-text"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card-container reveal">
+                    <h3 class="card-title">Construção</h3>
+
+                    <div class="flip-card"
+                        data-benefit="Produzido com dois potes plásticos presos por elástico, contendo bolinhas e fitas coloridas para criar sons únicos.">
+                        <div class="flip-card-inner">
+
+                            <div class="card-face card-front">
+                                <img src="img/Espada.jpg" class="card-img">
+                            </div>
+
+                            <div class="card-face card-back">
+                                <img src="img/CartasVerso.jpg" class="card-back-img">
+                                <p class="benefit-text"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card-container reveal">
+                    <h3 class="card-title">Sustentabilidade</h3>
+
+                    <div class="flip-card"
+                        data-benefit="Criado com materiais reutilizados, promovendo consciência ambiental e criatividade.">
+                        <div class="flip-card-inner">
+
+                            <div class="card-face card-front">
+                                <img src="img/Ouro.jpg" class="card-img">
+                            </div>
+
+                            <div class="card-face card-back">
+                                <img src="img/CartasVerso.jpg" class="card-back-img">
+                                <p class="benefit-text"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card-container reveal">
+                    <h3 class="card-title">Experiência</h3>
+
+                    <div class="flip-card"
+                        data-benefit="Traz envolvimento, ritmo e diversão. Ideal para dinâmicas em grupo e aulas musicais.">
+                        <div class="flip-card-inner">
+
+                            <div class="card-face card-front">
+                                <img src="img/Zap.jpg" class="card-img">
+                            </div>
+
+                            <div class="card-face card-back">
+                                <img src="img/CartasVerso.jpg" class="card-back-img">
+                                <p class="benefit-text"></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JOGO 02 — ROLETA -->
+        <section id="roleta" class="roleta-section">
+
+            <h2 class="roleta-title">🎯 JOGO 02 — Roleta do Preço 🎰</h2>
+
+            <p class="roleta-description">
+                Aqui você irá girar a roleta e testar sua sorte!
+                Ao completar o giro, você desbloqueia o melhor preço possível do <strong>Xique Xique</strong>.
+                Vence o jogo ao descobrir o valor final premiado!
+            </p>
+
+            <div id="slot-container">
+                <div id="slot">
+                    <div class="slot-item">R$ 89</div>
+                    <div class="slot-item">R$ 120</div>
+                    <div class="slot-item">R$ 59</div>
+                    <div class="slot-item">R$ 149</div>
+                    <div class="slot-item final-price">R$ 25</div>
+                    <div class="slot-item">R$ 199</div>
+                </div>
+            </div>
+
+            <button id="girar" class="btn-girar">Girar Roleta</button>
+
+            <p id="mensagem-final" class="mensagem-final hidden"></p>
+        </section>
+
+    </section>
+
+
+    <!-- SCRIPTS -->
+    <script>
+        let cartasViradas = 0;
+        let roletaGirou = false;
+
+        const botaoSecreto = document.getElementById("botao-secreto");
+        const msgBonus = document.getElementById("msg-bonus");
+        const audioArea = document.getElementById("audio-area");
+        const audioChocalho = document.getElementById("sound-chocalho");
+
+        /* ===============================
+           JOGO 01 - CARTAS
+        ================================ */
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('click', () => {
+
+                card.classList.add("flipped");
+
+                const benefit = card.getAttribute("data-benefit");
+                const textBox = card.querySelector(".benefit-text");
+                textBox.innerText = benefit;
+
+                if (!card.dataset.completed) {
+                    card.dataset.completed = true;
+                    cartasViradas++;
+                    verificarLiberacao();
+                }
+            });
+        });
+
+        /* ===============================
+           JOGO 02 - ROLETA
+        ================================ */
+        document.getElementById("girar").addEventListener("click", () => {
+            const slot = document.getElementById("slot");
+            const mensagem = document.getElementById("mensagem-final");
+
+            mensagem.classList.add("hidden");
+
+            const itemHeight = 80;
+            const finalIndex = 4;
+            const finalOffset = -(finalIndex * itemHeight);
+
+            slot.style.transition = "transform 2.3s cubic-bezier(.17,.67,.55,1.43)";
+            slot.style.transform = `translateY(${finalOffset}px)`;
+
+            setTimeout(() => {
+                mensagem.innerHTML = `
+                    🎉 Parabéns! Você desbloqueou o MELHOR preço do nosso instrumento:
+                    <br><strong style="color:#ff4444; font-size: 28px;">R$ 25</strong>
+                    <br><br>
+                    Agora você pode aproveitar toda a autenticidade, ritmo e criatividade do 
+                    <strong>Xique Xique</strong> com o valor mais acessível possível!
+                `;
+                mensagem.classList.remove("hidden");
+
+                roletaGirou = true;
+                verificarLiberacao();
+            }, 2400);
+        });
+
+        /* ===============================
+           LIBERAÇÃO DO BOTÃO SECRETO
+        ================================ */
+        function verificarLiberacao() {
+            if (cartasViradas >= 4 && roletaGirou) {
+                botaoSecreto.classList.remove("locked");
+                botaoSecreto.classList.add("unlocked");
+                botaoSecreto.innerHTML = "✨ Botão Secreto Liberado — Ouça o som do Xique Xique!";
+            }
+        }
+
+        botaoSecreto.addEventListener("click", () => {
+
+            if (!botaoSecreto.classList.contains("unlocked")) {
+                msgBonus.innerHTML = "⚠ Você ainda não completou todos os jogos!";
+                msgBonus.classList.remove("hidden");
+                return;
+            }
+
+            msgBonus.classList.add("hidden");
+
+            audioArea.classList.remove("hidden");
+        });
+
+    </script>
+
+</body>
+
+</html>
